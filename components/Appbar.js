@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     },
     appbarcontiner:{
         width:"100%",
+        height:window_height/15,
         
         backgroundColor:"green",
         // justifyContent:"center",

@@ -6,7 +6,7 @@ export default function Cardname(props) {
     <View style={styles.body}>
     <View style={styles.textcontiner}> 
  <Text style={styles.tittle}>{props.Cardname}</Text>
- <TouchableOpacity style={styles.morebutton}>
+ <TouchableOpacity style={styles.morebutton} onPress={props.navifunction}>
  <Text style={styles.moretext}>more</Text>
  </TouchableOpacity>
  </View>
@@ -16,7 +16,9 @@ export default function Cardname(props) {
 
 const styles = StyleSheet.create({
     body:{
+
         flex:1,
+      
     //    backgroundColor:"red",
 
     },
@@ -29,7 +31,8 @@ const styles = StyleSheet.create({
     },
     tittle:{
         fontWeight:"bold",
-        fontSize:15
+        fontSize:15,
+        color:"white"
 
     },
     morebutton:{

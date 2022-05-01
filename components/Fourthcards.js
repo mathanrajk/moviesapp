@@ -1,22 +1,22 @@
 import { StyleSheet, Text, View,Dimensions,ScrollView,Image} from 'react-native'
-import React from 'react'
+import React from 'react';
 import Icons from "react-native-vector-icons/FontAwesome5";
 import LinearGradient from 'react-native-linear-gradient';
 const window_width = Dimensions.get("screen").width;
 const window_height = Dimensions.get("screen").height;
 
-export default function Firstcards(props) {
+export default function Fourthcard(props) {
   return (
     
 <View style={styles.box}>
-  <LinearGradient style={styles.total}  colors={['rgba(0,0,0,0)','rgba(0,0,0,1)']} start={{x:0,y:0}} end={{x: 0, y:1}} >     
+<LinearGradient style={styles.total}  colors={['rgba(0,0,0,0)','rgba(0,0,0,1)']} start={{x:0,y:0}} end={{x: 0, y:1}} >     
       <Icons style={styles.icons} name={"play"} size={20} color={"white"}/> 
       <Text style={styles.moviename}>{props.name}</Text>
       <Text style={styles.date}>{props.dateandtime}</Text>
 
 </LinearGradient>  
+            
 <Image style={styles.image} source={{uri:props.imageurl}} resizeMode="cover"/>
-
 </View>
 
   
