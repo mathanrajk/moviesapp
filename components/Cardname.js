@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     morebutton:{
        
         position:"absolute",
-        right:4,
+        right:10,
        
        
 

@@ -4,6 +4,7 @@ import Videospage from "./screens/Videospage";
 import Songspage from './screens/Songspage';
 import Advancevideopage from './screens/Advancevideopage';
 import Settingpage from './screens/Settingpage';
+import Langagespage from './screens/langagespage';
 import Icons from "react-native-vector-icons/MaterialCommunityIcons";
 import Icon from "react-native-vector-icons/SimpleLineIcons"
 import { NavigationContainer } from '@react-navigation/native';
@@ -17,10 +18,11 @@ const Drawer =createDrawerNavigator();
 
 function Drawernavi(){
   return(
-    <Drawer.Navigator>
-      <Drawer.Screen name='Home' component={Homepage}/>
-      <Drawer.Screen name='Songs' component={Songspage}/>
-      <Drawer.Screen name='Settings' component={Settingpage}/>
+    <Drawer.Navigator initialRouteName='Home' inactiveColor="white" backgroundColor="green">
+      <Drawer.Screen name='Home' component={Homepage} options={{headerShown:false}}/>
+      <Drawer.Screen name='Languages' component={Langagespage} options={{
+       
+      }}/>
 
     </Drawer.Navigator>
   );
@@ -35,7 +37,7 @@ function Tabnavi() {
 
    
   }} activeColor={"white"} inactiveColor={"black"}>
-      <Tab.Screen name="Home" component={Homepage} options={{
+      <Tab.Screen name="Drawer" component={Drawernavi} options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ color,focused }) => (
             <Icons name="home-outline" color={color} size={26} />

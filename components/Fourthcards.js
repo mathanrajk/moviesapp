@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
       color:"white",
       position:"absolute",
       bottom:10,
-      left:40,
+      left:35,
 
     }
 })

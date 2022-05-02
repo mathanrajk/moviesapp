@@ -1,10 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import Appbar from '../components/Appbar';
 
-export default function Settingpage() {
+export default function Settingpage({navigation}) {
   return (
     <View>
-      <Text>Settingpage</Text>
+    <Appbar menus={()=>navigation.openDrawer()} subname={"Setting"}/>
+
+     
+      
     </View>
   )
 }

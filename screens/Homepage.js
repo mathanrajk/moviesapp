@@ -18,7 +18,7 @@ export default function Homepage({navigation}) {
   return (
    
       <View style={styles.body}>
-        <Appbar/>
+        <Appbar menus={()=>navigation.openDrawer()} subname={"Home"}/>
 
       <ScrollView style={styles.maincontainer}>
   
